@@ -1,0 +1,130 @@
+$accent: #f8dc81;
+$accent_light: #002A59;
+
+body{
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	color: #333;
+}
+
+h1{
+	font-weight: 800;
+	font-family: "Roboto Slab";
+	font-size: 40px;
+}
+
+h2{
+	font-size: 29px;
+}
+
+h3{
+	font-size: 24px;
+}
+
+h2,h3,h4,h5,h6{
+	font-weight: 600;
+	font-family: 'Roboto Slab';
+}
+
+section{
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+
+	.section-title{
+		margin-bottom: 20px;
+	}
+
+
+	.btn{
+		border-color: $accent_light;
+		margin-top: 20px;
+
+		&:hover{
+			background: $accent_light;
+			color: #fff;
+		}
+	}
+}
+
+.section-header{
+	.section-title{
+		margin-bottom: 20px;
+	}
+}
+
+.fp-scrollable{
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+.d-grid{
+	display: grid;
+	grid-gap: 30px;
+}
+
+.d-flex{
+	display: flex;
+}
+
+i.fas:before{
+	font-family: "FontAwesome";
+	font-style: normal;
+}
+
+.fa-phone:before{
+	content: "\f879";
+}
+
+.fa-cart:before{
+	content: "\f07a";
+}
+
+.fa-bars:before{
+	content: "\f0c9";
+}
+
+.container{
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.d-flex{
+	display: flex;
+}
+
+.align-items-center{
+	align-items: center;
+}
+
+.d-grid{
+	display: grid;
+}
+
+.mask{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.btn{
+	padding: 15px 35px;
+	border: 2px solid #fff;
+	display: inline-block;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+
+.fa{
+	font-family: "FontAwesome";
+	font-weight: 400;
+	font-style: normal;
+}
+
+.fa-sign-in::before{
+	content: "\f2f6";
+}

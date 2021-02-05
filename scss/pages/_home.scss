@@ -1,0 +1,51 @@
+.stack_about{
+	grid-template-columns: 1fr 1fr;
+}
+
+.stack_offer{
+	grid-template-columns: repeat(2, auto);
+
+	.stack__item{
+		max-width: 100%;
+		min-width: 0px;
+	}
+}
+
+.stack_news{
+
+	grid-template-columns: repeat(4, 1fr);
+
+	a{
+		display: block;
+		text-decoration: underline;
+		&:hover{
+			color: red;
+		}
+	}
+}
+
+.homepage-banner{
+	height: 300px;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.conctacts{
+	background-attachment: fixed;
+	background-size: cover
+}
+
+.stack_contacts{
+	table{
+		background: #fff;
+		padding: 30px;
+
+		tr > td:first-child{
+			font-weight: 600;
+		}
+
+		td{
+			padding: 4px 10px;
+		}
+	}	
+}

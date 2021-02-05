@@ -1,0 +1,190 @@
+.header{
+	position: relative;
+	color: #fff;
+	min-height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+
+	.mask{
+		background: rgba(0,0,0,0.6);
+		z-index: 0
+	}
+
+
+	.container{
+		position: relative;
+		z-index: 1;
+	}
+}
+
+.heading{
+	position: fixed;
+	width: 100%;
+	padding: 0 30px;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	color: #fff;
+	transition: all .5s cubic-bezier(0.77,0,.175,1);
+	border-bottom: 1px solid #999;
+
+	&.active{
+		color: #333;
+		background-color: #fff;
+
+		.target{
+			background: $accent_light
+		}
+
+		.auth, .cart{
+			&:hover{
+				color: $accent_light;
+			}
+		}
+	}
+}
+
+.main-nav{
+	margin-left: 50px;
+
+	&__list{
+
+	}
+
+	&__item{
+		padding: 25px 15px;
+		position: relative;
+		transition: all .2s ease;
+	}
+
+	&__link{
+		
+	}
+}
+
+.target {
+	position: absolute;
+	height: 4px;
+	border-radius: 15px 15px 0 0;
+	top: calc(100% - 4px);
+	background: #fff;
+	z-index: -1;
+	transform: translateX(-60px);
+	transition: all .5s cubic-bezier(0.77,0,.175,1);
+}
+
+.auth, .cart{
+	transition: all .3s ease;
+	&:hover{
+		color: $accent;
+	}
+	i{
+		margin-right: 10px;
+	}
+}
+
+.cart{
+	margin-left: auto;
+	margin-right: 25px;
+}
+
+.offer{
+	padding-top: 400px;
+
+	&__title{
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		span{
+			color: $accent;
+			font-weight: 600;
+			// opacity: .75
+		}
+	}
+
+	&__btn{
+		margin: 30px 0 0;
+		font-weight: 600;
+		&:hover{
+			background-color: #fff;
+			color: #333;
+		}
+	}
+}
+
+
+.form{
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 20px 40px;
+	&__title{
+		margin-bottom: 20px;
+	}
+
+	.input-group{
+		width: 100%;
+		margin-bottom: 15px;
+
+		&__input{
+			width: 100%;
+			border-radius: 5px;
+			padding: 10px 20px;
+			margin-bottom: 5px;
+			border: 1px solid #999;
+		}
+
+		&__help{
+			text-align: left;
+			display: block;
+			color: red;
+		}
+
+		&__btn{
+			background-color: $accent;
+			color: #333;
+			border-radius: 5px;
+			margin-left: 0;
+			display: block;
+			padding: 10px 20px;
+			&:hover{
+				background-color: darken($accent, 10);
+			}
+		}
+	}
+}
+
+.auth-form{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	max-width: 500px;
+	position: relative;
+}
+
+.quick-auth{
+
+	span{
+		font-size: 13px;
+	}
+	&__list{
+		width: 100%;
+		justify-content: center;
+		margin-top: 15px !important;
+		img{
+			width: 24px;
+			margin: 0 5px;
+			transition: all .3s ease;
+
+			&:hover{
+				transform: translateY(-7px);
+			}
+		}
+	}
+}
+
+.register-link{
+	text-decoration: underline;
+	font-size: 13px;
+	display: block;
+	margin-top: 15px;
+}
