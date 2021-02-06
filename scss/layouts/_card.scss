@@ -1,6 +1,40 @@
 .card{
+	border: 1px solid rgba(0,0,0,.125);
+	background: #fff;
+	overflow: hidden;
+	border-radius: 5px;
+
+	&__body{
+		padding: 1.125rem;
+	}
+
+	&__thumbnail{
+		width: 100%;
+		height: auto;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
 	&__pubdate{
 		font-style: italic;
 		opacity: .54;
+		font-size: 13px;
+	}
+	&__title{
+		margin-bottom: .75rem;
+	}
+	&__text{
+		margin-bottom: 1rem !important;
+	}
+
+	&__btn{
+		padding: 6px 12px;
+		font-size: 16px;
+		border-radius: 5px;
+		background: $accent_light;
+		color: #fff;
+		&:hover{
+			background: transparent !important;
+			color: $accent_light !important;
+		}
 	}
 }

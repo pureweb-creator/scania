@@ -22,24 +22,24 @@
 	<a href="/"><img src="img/home-logo.webp" class="logo"  width="200" alt="home logo"></a>
 	<nav class="main-nav">
 		<ul class="main-nav__list d-flex">
-			<li class="main-nav__item"><a href="#" class="main-nav__link">Головна</a></li>
+			<li class="main-nav__item"><a href="#header" class="main-nav__link go_to">Головна</a></li>
 			<li class="main-nav__item"><a href="#" class="main-nav__link">Запчастини БУ</a></li>
 			<li class="main-nav__item"><a href="#" class="main-nav__link">Запчастини нові</a></li>
 			<li class="main-nav__item"><a href="#" class="main-nav__link">Запит по VIN</a></li>
-			<li class="main-nav__item"><a href="#" class="main-nav__link">Новини</a></li>
-			<li class="main-nav__item"><a href="#" class="main-nav__link">СТО</a></li>
-			<li class="main-nav__item"><a href="#" class="main-nav__link">Конакти</a></li>
+			<li class="main-nav__item"><a href="#news" class="main-nav__link go_to">Новини</a></li>
+			<li class="main-nav__item"><a href="#sto" class="main-nav__link go_to">СТО</a></li>
+			<li class="main-nav__item"><a href="#conctacts" class="main-nav__link go_to">Конакти</a></li>
 		</ul>
 	</nav>
 	<nav class="mob-nav">
 		<ul class="mob-nav__list">
-			<li class="mob-nav__item"><a href="#" class="mob-nav__link">Головна</a></li>
+			<li class="mob-nav__item"><a href="#header" class="mob-nav__link go_to">Головна</a></li>
 			<li class="mob-nav__item"><a href="#" class="mob-nav__link">Запчастини БУ</a></li>
 			<li class="mob-nav__item"><a href="#" class="mob-nav__link">Запчастини нові</a></li>
 			<li class="mob-nav__item"><a href="#" class="mob-nav__link">Запит по VIN</a></li>
-			<li class="mob-nav__item"><a href="#" class="mob-nav__link">Новини</a></li>
-			<li class="mob-nav__item"><a href="#" class="mob-nav__link">СТО</a></li>
-			<li class="mob-nav__item"><a href="#" class="mob-nav__link">Конакти</a></li>
+			<li class="mob-nav__item"><a href="#news" class="mob-nav__link go_to">Новини</a></li>
+			<li class="mob-nav__item"><a href="#sto" class="mob-nav__link go_to">СТО</a></li>
+			<li class="mob-nav__item"><a href="#conctacts" class="mob-nav__link go_to">Конакти</a></li>
 		</ul>
 	</nav>
 	<span class="target"></span>
@@ -52,9 +52,7 @@
 	<i class="fas fa-bars burger"></i>
 </div>
 
-
-
-<header class="header section lazy" data-src="img/main-bg.webp">
+<header class="header section lazy" id="header" data-src="img/main-bg.webp">
 	<div class="mask"></div>
 	<div class="container">
 		<div class="offer">
@@ -78,18 +76,11 @@
 					<p>
 						Далеко-далеко за, словесными горами в стране гласных и согласных живут, рыбные тексты. Рукописи выйти своего, ручеек его составитель образ предупреждал? Маленькая там деревни текстами жаренные всемогущая раз прямо своих единственное несколько, толку?
 					</p>
+					<p>
+						Далеко-далеко за, словесными горами в стране гласных и согласных живут, рыбные тексты. Рукописи выйти своего, ручеек его составитель образ предупреждал? Маленькая там деревни текстами жаренные всемогущая раз прямо своих единственное несколько, толку?
+					</p>
 				</div>
 			</div>
-			<div class="stack__item">
-				<img class="lazy" data-src="img/scania-bus.webp" alt="SCANIA Автобус">
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="section">
-	<div class="container">
-		<div class="stack d-grid stack_offer">
 			<div class="stack__item">
 				<div class="offer-gallery">
 					<img data-lazy="img/dsc_8477.webp" alt="Ремонт, обслуговування та розборка автомобілів SCANIA">
@@ -97,67 +88,143 @@
 					<img data-lazy="img/dsc_8477.webp" alt="Ремонт, обслуговування та розборка автомобілів SCANIA">
 				</div>
 			</div>
-			<div class="section-header stack__item">
-				<h2 class="section-title">
-					Що ми попонуємо?
-				</h2>
-				<div class="section-description">
-					<ul>
-						<li>Технічне обслуговування</li>
-						<li>Ремонт</li>
-						<li>Розборка</li>
-					</ul>
-					<p>
-						Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Corrupti cum laudantium id repellendus, amet perferendis alias fugit odit, minima ratione ex enim deleniti ducimus numquam, eum sint minus, omnis aliquam.
-					</p>
-					<a href="tel:380673411343" class="btn">Зателефонувати</a>
-				</div>
-			</div>
 		</div>
 	</div>
 </section>
 
+<section class="services">
+	<div class="container">
+		<div class="section-header text-center">
+			<h2 class="section-title">
+				Наші послуги
+			</h2>
+			<p class="section-description">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eos rem quia iure excepturi minima unde laborum sapiente impedit neque. Ipsum deserunt rem culpa repellat rerum ratione dolore in hic.
+			</p>
+		</div>
+		<div class="stack stack_services d-grid">
+			<div class="stack__item text-center">
+				<div class="stack__icon stack__icon_technical_service"></div>
+				<h3 class="stack__title">Технічне обслуговування</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, maxime.
+				</p>
+			</div>
+			<div class="stack__item text-center">
+				<div class="stack__icon stack__icon_repair"></div>
+				<h3 class="stack__title">Ремонт</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, maxime.
+				</p>
+			</div>
+			<div class="stack__item text-center">
+				<div class="stack__icon stack__icon_disassembly "></div>
+				<h3 class="stack__title">Розборка</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, maxime.
+				</p>
+			</div>
+		</div>
 
-<div class="homepage-banner lazy" data-src="img/newscania.jpg">
-	
-</div>
 
+	</div>
+</section>
 
-<section class="news section">
+<div class="homepage-banner lazy" data-src="img/newscania.jpg"></div>
+
+<section class="news section" id="news">
 	<div class="container">
 		<h2 class="section-title">
 			Новини
 		</h2>
 		<div class="stack stack_news d-grid">
 			<div class="stack__item card">
-				<img class="lazy" data-src="img/slide.webp" alt="Название статьи">
-				<time datetime="05.02.2021" class="card__pubdate">05.02.2021</time>
-				<h3 class="card__title">Название стаьи</h3>
-				<a href="#">Узнть больше</a>
+				<img class="lazy card__thumbnail" data-src="img/slide.webp" alt="Название статьи">
+				<div class="card__body">
+					<time datetime="05.02.2021" class="card__pubdate">05.02.2021</time>
+					<h3 class="card__title">Название статьи</h3>
+					<p class="card__text">
+              			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi aliquid praesentium aspernatur!
+					</p>
+					<a href="#" class="btn card__btn">Узнaть больше</a>
+				</div>
 			</div>
 			<div class="stack__item card">
-				<img class="lazy" data-src="img/slide 2.webp" alt="Название статьи">
-				<time datetime="05.02.2021" class="card__pubdate">05.02.2021</time>
-				<h3 class="card__title">Название стаьи</h3>
-				<a href="#">Узнть больше</a>
+				<img class="lazy card__thumbnail" data-src="img/slide 2.webp" alt="Название статьи">
+				<div class="card__body">
+					<time datetime="05.02.2021" class="card__pubdate">05.02.2021</time>
+					<h3 class="card__title">Название статьи</h3>
+					<p class="card__text">
+              			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi aliquid praesentium aspernatur!
+					</p>
+					<a href="#" class="btn card__btn">Узнaть больше</a>
+				</div>
 			</div>
 			<div class="stack__item card">
-				<img class="lazy" data-src="img/slide 3.webp" alt="Название статьи">
-				<time datetime="05.02.2021" class="card__pubdate">05.02.2021</time>
-				<h3 class="card__title">Название стаьи</h3>
-				<a href="#">Узнть больше</a>
+				<img class="lazy card__thumbnail" data-src="img/slide 3.webp" alt="Название статьи">
+				<div class="card__body">
+					<time datetime="05.02.2021" class="card__pubdate">05.02.2021</time>
+					<h3 class="card__title">Название статьи</h3>
+					<p class="card__text">
+              			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi aliquid praesentium aspernatur!
+					</p>
+					<a href="#" class="btn card__btn">Узнaть больше</a>
+				</div>
 			</div>
 			<div class="stack__item card">
-				<img class="lazy" data-src="img/slide 4.webp" alt="Название статьи">
-				<time datetime="05.02.2021" class="card__pubdate">05.02.2021</time>
-				<h3 class="card__title">Название стаьи</h3>
-				<a href="#">Узнть больше</a>
+				<img class="lazy card__thumbnail" data-src="img/slide 4.webp" alt="Название статьи">
+				<div class="card__body">
+					<time datetime="05.02.2021" class="card__pubdate">05.02.2021</time>
+					<h3 class="card__title">Название статьи</h3>
+					<p class="card__text">
+              			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi aliquid praesentium aspernatur!
+					</p>
+					<a href="#" class="btn card__btn">Узнaть больше</a>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="conctacts section lazy" data-src="img/contacts.webp">
+<section class="sto" id="sto">
+	<div class="container">
+		<div class="section-header text-center">
+			<h2 class="section-title">СТО</h2>
+			<p class="section-description"><span>ТОВ АВТОКОНТАКТ ПЛЮС</span> пропонує послуги з ремонту вантажних автомобілів Scania а також причепної техніки</p>
+		</div>
+		<ul class="stack stack_sto">
+			<!-- Если ссылки с подробным описанием нету, класс isnt и нету тега ссылки <a href=""></a> -->
+			<li><a href="#"><i class="fas fa-angle-right"></i>Капітальний ремонт двигунів,  коробок передач, ретардерів та редукторів.</a></li>
+			<li><a href="#"><i class="fas fa-angle-right"></i>Компьютерна діагностика</a></li>
+			
+			
+			<li class="isnt"><i class="fas fa-angle-right"></i>Ремонт електронних блоків керування</li>
+			<li class="isnt"><i class="fas fa-angle-right"></i>Перепрограмування блоків керування</li>
+			<li class="isnt"><i class="fas fa-angle-right"></i>Відключення іммобілайзерів і систем Adblue</li>
+			
+
+			<li><a href="#"><i class="fas fa-angle-right"></i>Діагностика і ремонт паливних систем PDE, HPI, XPI</a></li>
+			<li><a href="#"><i class="fas fa-angle-right"></i>Діагностика і ремонт систем Adblue EURO 4,5,6</a></li>
+			<li><a href="#"><i class="fas fa-angle-right"></i>Діагностика і ремонт систем Adblue EURO 4,5,6</a></li>
+			<li><a href="#"><i class="fas fa-angle-right"></i>Діагностика та ремонт турбокомпрессорів ( в тому числі зі змінною геометрією)</a></li>
+			<li><a href="#"><i class="fas fa-angle-right"></i>Діагностика і ремонт гальмівної системи і підвіски</a></li>
+			<li><a href="#"><i class="fas fa-angle-right"></i>Регулювання клапанів і насос форсунок</a></li>
+			<li><a href="#"><i class="fas fa-angle-right"></i>Проведення технічного обслуговування</a></li>
+			<li><a href="#"><i class="fas fa-angle-right"></i>Зварювані  роботи</a></li>
+			<li><a href="#"><i class="fas fa-angle-right"></i>Діагностика і ремонт автономних опалювачів WEBASTO,EBERSPACHER</a></li>
+			<li><a href="#"><i class="fas fa-angle-right"></i>Ремонт і встановлення гідравлічного обладнання</a></li>
+			<li><a href="#"><i class="fas fa-angle-right"></i>Відновлення і рихтування вісей, гальмівних валі, стабілізаторів</a></li>
+			<li><a href="#"><i class="fas fa-angle-right"></i>Відновлення елементів системи EGR</a></li>
+			<li><a href="#"><i class="fas fa-angle-right"></i>Виїзд і допомога в дорозі</a></li>
+			<li><a href="#"><i class="fas fa-angle-right"></i>Консультація та допомога у виборі і купівлі автомобіля SCANIA</a></li>
+			<li><a href="#"><i class="fas fa-angle-right"></i>Встановлення додатково  обладнання</a></li>
+		</ul>
+
+		<a href="#" class="btn">Подивитиcя всi</a>
+	</div>
+</section>
+
+<section class="conctacts section lazy" id="conctacts" data-src="img/contacts.webp">
 	<div class="container">
 		<h2 class="section-title">
 			Контакти
@@ -195,7 +262,6 @@
 	</div>
 </section>
 
-
 <div class="remodal" data-remodal-id="auth">
 	<form action="#" method="POST" class="auth-form form">
 		<button data-remodal-action="close" class="remodal-close"></button>
@@ -208,11 +274,11 @@
 
 		</div>
 		<div class="input-group">
-			<input type="email" name="email" class="input-group__input" placeholder="Ваша пошта">
+			<input type="email" autocomplete="username" name="email" class="input-group__input" placeholder="Ваша пошта">
 			<span class="input-group__help"></span>
 		</div>
 		<div class="input-group">
-			<input type="password" name="pass" class="input-group__input" placeholder="Ваш пароль">
+			<input type="password" autocomplete="new-password" name="pass" class="input-group__input" placeholder="Ваш пароль">
 			<span class="input-group__help"></span>
 		</div>
 		<div class="input-group">
@@ -247,15 +313,15 @@
 
 		</div>
 		<div class="input-group">
-			<input type="email" name="email" class="input-group__input" placeholder="Ваша пошта">
+			<input type="email" autocomplete="username" name="email" class="input-group__input" placeholder="Ваша пошта">
 			<span class="input-group__help"></span>
 		</div>
 		<div class="input-group">
-			<input type="password" name="pass" class="input-group__input" placeholder="Ваш пароль">
+			<input type="password"  autocomplete="new-password" name="pass" class="input-group__input" placeholder="Ваш пароль">
 			<span class="input-group__help"></span>
 		</div>
 		<div class="input-group">
-			<input type="password" name="pass" class="input-group__input" placeholder="Ваш пароль ще раз">
+			<input type="password" autocomplete="new-password" name="pass" class="input-group__input" placeholder="Ваш пароль ще раз">
 			<span class="input-group__help"></span>
 		</div>
 		<div class="input-group">
