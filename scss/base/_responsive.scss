@@ -95,6 +95,12 @@
 	    grid-template: unset;
 	    grid-area: unset !important;
 	}
+
+
+	.product-card{
+		margin-bottom: 50px;
+		grid-template-columns: 1fr
+	}
 }
 
 

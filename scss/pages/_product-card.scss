@@ -1,0 +1,23 @@
+.product-card{
+	grid-template-columns: 1fr 1fr;
+	// grid-gap: 30px;
+
+	.product-card__description{
+		margin-top: 25px;
+	}
+
+	.card__desc{
+		margin: 7px 0;
+	}
+
+
+	.card__btn{
+		padding: 10px 20px;
+		font-size: 18px;
+	}
+
+	.card__btn:hover{
+		color: #fff !important;
+		background: darken($red, 10) !important;
+	}
+}
