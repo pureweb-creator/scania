@@ -4,10 +4,19 @@
 	display: block;
 	max-width: 100%;
 	table-layout: fixed;
+	border-spacing: 0;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 5px;
+
+	thead{
+		background: rgba(0,0,0,0.1);
+		td{
+			padding: 15px;
+		}
+	}
 
 	&__item{
 		align-items: center;
-		border-bottom: 1px solid rgba(0,0,0,0.2);
 		padding: 30px 0;
 		overflow: hidden;
 		img{
@@ -21,6 +30,7 @@
 
 		td{
 			padding: 0 10px;
+			border-bottom: 1px solid rgba(0,0,0,0.1);
 		}
 
 
@@ -35,9 +45,26 @@
 	}
 
 	&__totals{
-		padding-top: 20px;
+		padding: 20px;
 		// text-align: right;
 		font-weight: 700;
 		font-size: 18px;
 	}
+
+	&__close{
+		padding-right: 30px !important;
+
+		a{
+			transition: all .3s ease;
+
+			&:hover{
+				transform: rotate(180deg);
+			}
+		}
+	}
+}
+
+.form_checkout{
+	padding: 0;
+	margin-top: 50px;
 }
