@@ -1,0 +1,29 @@
+.page-content{
+	margin-top: 100px;
+
+	.search-form{
+		padding: 20px 0;
+
+		input{
+			padding-right: 37px;
+			transition: all .2s ease;
+			&:focus{
+				box-shadow: $main_shadow;
+			}
+		}
+	}
+
+	.input-group{
+		width: 50% !important;
+		position: relative;
+	}
+
+	.search-form__btn{
+		background: transparent;
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		transform: translateY(-60%);
+		border: none;
+	}
+}

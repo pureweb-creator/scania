@@ -3,16 +3,21 @@
 @import "vendor/slick";
 
 // Base
-@import "base/reset";
 @import "base/specification";
+@import "base/reset";
+@import "base/page";
 
 // Layouts
 @import "layouts/header";
 @import "layouts/mob-nav";
 @import "layouts/card";
+@import "layouts/pagination";
+@import "layouts/breadcrumb";
+@import "layouts/sidebar";
 @import "layouts/footer";
 
 // Pages
 @import "pages/home";
+@import "pages/used-parts";
 
 @import "base/responsive";

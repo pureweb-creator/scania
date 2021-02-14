@@ -1,0 +1,26 @@
+.sidebar{
+	grid-area: 2/1;
+	border-right: 1px solid rgba(0,0,0,.21);
+	margin-bottom: 50px;
+
+	&__title{
+		margin-bottom: 10px;
+	}
+
+
+	li{
+		padding: 5px 0;
+		transition: margin-left .3s ease;
+		&:hover{
+			margin-left: 10px;
+			a{
+				text-decoration: underline;
+				color: $accent_light;
+			}
+		}
+	}
+
+	i{
+		margin-right: 10px;
+	}
+}

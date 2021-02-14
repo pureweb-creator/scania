@@ -1,0 +1,27 @@
+.breadcrumb{
+	margin: 0 0 20px;
+
+	&__list{
+
+	}
+
+	&__item.current{
+		opacity: .7;
+	}
+
+	&__link{
+		margin-right: 15px;
+		&:hover{
+			color: $red;
+			text-decoration: underline;
+		}
+
+		&::after{
+			margin-left: 10px;
+			font-family: "FontAwesome";
+			font-style: normal;
+			content: "\f105";
+
+		}
+	}
+}

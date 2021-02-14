@@ -46,6 +46,19 @@
 	.offer{
 		padding-top: 200px;
 	}
+
+	.used-parts__main .loop {
+	    grid-template-columns: repeat(2, 1fr);
+	}
+
+
+	.used-parts__main {
+	    grid-template: repeat(2, auto)/1fr 3fr;
+	}
+
+	.page-content .input-group{
+		width: 100% !important;
+	}
 }
 
 @media(max-width: 768px){
@@ -72,6 +85,16 @@
 	.services .stack_services{
 		grid-template-columns: 1fr 1fr
 	}
+
+	.sidebar {
+	    grid-area: unset;
+	    border-right: unset;
+	}
+
+	.used-parts__main,.used-parts__main > *{
+	    grid-template: unset;
+	    grid-area: unset !important;
+	}
 }
 
 
@@ -83,6 +106,9 @@
 	.container{
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	.d-grid{
+		grid-gap: 15px;
 	}
 	.auth,
 	.cart{
@@ -105,6 +131,9 @@
 	    background-repeat: no-repeat;
 	    background-position: center;
 	}
+	.page-content .search-form{
+		padding: 0;
+	}
 	.stack_contacts{
 		table{
 			padding: 10px;
@@ -112,5 +141,13 @@
 	}
 	.services .stack_services{
 		grid-template-columns: 1fr
+	}
+
+
+	.used-parts__main .loop{
+		grid-template-columns: 1fr
+	}
+	.sidebar{
+		grid-row: 3/4 !important;
 	}
 }

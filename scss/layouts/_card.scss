@@ -1,8 +1,13 @@
 .card{
-	border: 1px solid rgba(0,0,0,.125);
+	// border: 1px solid rgba(0,0,0,.125);
 	background: #fff;
 	overflow: hidden;
 	border-radius: 5px;
+	box-shadow: $card_shadow;
+	transition: all .3s ease;
+	&:hover{
+		box-shadow: $card_shadow_active;
+	}
 
 	&__body{
 		padding: 1.125rem;
@@ -29,6 +34,7 @@
 	}
 
 	&__btn{
+		margin-top: 10px;
 		padding: 6px 12px;
 		font-size: 16px;
 		border-radius: 5px;
@@ -38,5 +44,9 @@
 			background: transparent !important;
 			color: $accent_light !important;
 		}
+	}
+
+	&__key{
+		font-weight: 700;
 	}
 }
