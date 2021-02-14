@@ -45,6 +45,22 @@
 			}
 		}
 	}
+
+	.cart{
+		margin-left: auto;
+		margin-right: 25px;
+	}
+
+
+	.auth, .cart{
+		transition: all .3s ease;
+		&:hover{
+			color: $accent;
+		}
+		i{
+			margin-right: 10px;
+		}
+	}
 }
 
 .main-nav{
@@ -74,21 +90,6 @@
 	z-index: -1;
 	transform: translateX(-60px);
 	transition: all .5s cubic-bezier(0.77,0,.175,1);
-}
-
-.auth, .cart{
-	transition: all .3s ease;
-	&:hover{
-		color: $accent;
-	}
-	i{
-		margin-right: 10px;
-	}
-}
-
-.cart{
-	margin-left: auto;
-	margin-right: 25px;
 }
 
 .offer{
