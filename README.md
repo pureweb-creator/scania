@@ -5,6 +5,6 @@
 [ЗАПРОС ПО VIN](https://pureweb-creator.github.io/scania/vin.html)\
 [НОВОСТИ](https://pureweb-creator.github.io/scania/news.html)\
 [СТАТЬЯ](https://pureweb-creator.github.io/scania/article.html)\
-[СТО](https://pureweb-creator.github.io/scania/sto.html)\
+[СТО](https://pureweb-creator.github.io/scania/STO.html)\
 [КОНАКТЫ](https://pureweb-creator.github.io/scania/contacts.html)
 
