@@ -844,11 +844,15 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     if($(window).scrollTop() > 100) {
+      
       $('.heading').addClass('active');
       $('.logo').attr('src', 'img/scania-wordmark.webp');
+      
     } else {
-      $('.heading').removeClass('active');
-      $('.logo').attr('src', 'img/home-logo.webp');
+      if( !$('.heading').hasClass('heading_style_2') ){
+        $('.heading').removeClass('active');
+        $('.logo').attr('src', 'img/home-logo.webp');
+      }
     }
   });
 

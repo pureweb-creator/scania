@@ -59,6 +59,9 @@
 	.page-content .input-group{
 		width: 100% !important;
 	}
+	.related{
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 @media(max-width: 768px){
@@ -100,6 +103,13 @@
 	.product-card{
 		margin-bottom: 50px;
 		grid-template-columns: 1fr
+	}
+
+	.stack_contacts_extend{
+		grid-template-columns: 1fr
+	}
+	.related{
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
@@ -160,5 +170,9 @@
 
 	.cart__item img{
 		max-width: 200px
+	}
+
+	.related{
+		grid-template-columns: 1fr;
 	}
 }

@@ -1,0 +1,16 @@
+.vin_form{
+	padding: 0;
+	margin-bottom: 50px;
+
+	.input-group__input{
+		transition: all .1s ease;
+	}
+	.input-group__input:focus{
+		box-shadow: $main_shadow
+	}
+
+
+	label{
+		font-weight: 600;
+	}
+}

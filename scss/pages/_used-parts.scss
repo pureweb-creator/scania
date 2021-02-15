@@ -35,14 +35,6 @@
 .used-parts__main{
 	grid-template: repeat(2, auto) / 1fr 4fr;
 
-	.loop-wrap{
-		grid-area: 2
-	}
-
-	.loop{
-		grid-template-columns: repeat(3, 1fr);
-	}
-
 	.used-parts__form{
 		grid-area: 1/2; 
 	}
@@ -51,4 +43,12 @@
 		color: #fff !important;
 		background: darken($red, 10) !important;
 	}
+}
+
+.loop-wrap{
+	grid-area: 2
+}
+
+.loop{
+	grid-template-columns: repeat(3, 1fr);
 }

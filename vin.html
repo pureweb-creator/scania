@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Корзина</title>
+	<title>Запит по VIN</title>
 
 	<style>
 		@font-face{font-family:"Open Sans";font-style:normal;font-weight:400;src:url(fonts/open-sans-v18-cyrillic-ext-regular.eot);src:local(""),url(fonts/open-sans-v18-cyrillic-ext-regular.eot?#iefix) format("embedded-opentype"),url(fonts/open-sans-v18-cyrillic-ext-regular.woff2) format("woff2"),url(fonts/open-sans-v18-cyrillic-ext-regular.woff) format("woff"),url(fonts/open-sans-v18-cyrillic-ext-regular.ttf) format("truetype"),url(fonts/open-sans-v18-cyrillic-ext-regular.svg#OpenSans) format("svg"); font-display: swap;}
@@ -59,72 +59,58 @@
 <div class="page-content">
 	<div class="container">
 		<h1 class="section-title">
-			Коpзина
+			Запит по VIN
 		</h1>
 		<nav class="breadcrumb" aria-label="Breadcrumb">
 		  <ul class="breadcrumb__list d-flex">
 		    <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Головна</a></li>
-		    <li class="breadcrumb__item current">Корзина</li>
+		    <li class="breadcrumb__item current">Запит по VIN</li>
 		  </ul>
 		</nav>
 
 
-		<table class="cart">
-			<thead>
-				<tr class="cart__item">
-					<td>Фото</td>
-					<td>Назва</td>
-					<td>Кількість</td>
-					<td>Ціна</td>
-					<td></td>
-				</tr>
-			</thead>
-			<tr class="cart__item">
-				<td><img src="img/photo1__.png" alt="" class="cart__thumbnail"></td>
-				<td class="cart__name"><a href="#">Гидравлика на движущийся пол для тягача SCANIA</a></h3></td>
-				<td class="cart__count"><input type="number" placeholder="1" value="1"></td>
-				<td><span>1200 USD</span></td>
-				<td class="cart__close"><a href="#"><i class="fas fa-times"></i></a></td>
-			</tr>
-			<tr class="cart__item">
-				<td><img src="img/photo1__.png" alt="" class="cart__thumbnail"></td>
-				<td class="cart__name"><a href="#">Гидравлика на движущийся пол для тягача SCANIA</a></h3></td>
-				<td class="cart__count"><input type="number" placeholder="1" value="1"></td>
-				<td><span>1200 USD</span></td>
-				<td class="cart__close"><a href="#"><i class="fas fa-times"></i></a></td>
-			</tr>
-			<tr>
-				<td class="cart__totals">
-					Итого: 2400 USD
-				</td>
-			</tr>
-		</table>
+		<form action="#" method="POST" class="form vin_form">
+			<h3 class="form__title">Запит по номеру шасi</h3>
 
-
-		<form action="#" method="POST" class="form form_checkout">
-			<h3 class="form__title">Оформить заказ</h3>
 			<div class="input-group">
-				<input type="text" name="fullname" placeholder="ФИО" class="input-group__input">
+				<label for="number">Номер шасi *</label>
+				<input type="text" required id="number" name="number" placeholder="4USBT53544LT26841" class="input-group__input">
 			</div>
 			<div class="input-group">
-				<input type="tel" name="tel" placeholder="Телефон" class="input-group__input">
+				<label for="model">Модель *</label>
+				<input type="text" required id="model" name="model" placeholder="SCANIA" class="input-group__input">
 			</div>
 			<div class="input-group">
-				<input type="email" placeholder="Почта" class="input-group__input">
+				<label for="details">Необхідні деталі *</label>
+				<input type="text" required id="number" name="details" placeholder="Почъка" class="input-group__input">
+			</div>
+
+
+			<div class="input-group">
+				<label for="name">Ім'я</label>
+				<input type="text" id="name" name="name" placeholder="Pedro Huanito" class="input-group__input">
+			</div>
+			<div class="input-group">
+				<label for="company">Компанія</label>
+				<input type="text" id="company" name="company" placeholder="SCANIA" class="input-group__input">
+			</div>
+			<div class="input-group">
+				<label for="email">E-mail</label>
+				<input type="email" id="email" name="email" placeholder="pripal_guby@i.ua" class="input-group__input">
+			</div>
+			<div class="input-group">
+				<label for="phone">Phone</label>
+				<input type="tel" id="phone" name="phone" placeholder="0990652902" class="input-group__input">
 			</div>
 
 			<div class="input-group">
-				<input type="text" name="address" placeholder="Адреса" class="input-group__input">
-			</div>
-
-			<div class="input-group">
-				<textarea placeholder="Комментарий к заказу" name="comment" class="input-group__input"></textarea>
-			</div>
-
-			<div class="input-group">
-				<button type="submit" name="send" class="btn input-group__btn">Оформить заказ</button>
+				<button class="btn input-group__btn">Отправить</button>
 			</div>
 		</form>
+
+
+
+		
 		
 	</div>
 </div>

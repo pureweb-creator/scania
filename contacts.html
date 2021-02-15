@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Корзина</title>
+	<title>Контакти</title>
 
 	<style>
 		@font-face{font-family:"Open Sans";font-style:normal;font-weight:400;src:url(fonts/open-sans-v18-cyrillic-ext-regular.eot);src:local(""),url(fonts/open-sans-v18-cyrillic-ext-regular.eot?#iefix) format("embedded-opentype"),url(fonts/open-sans-v18-cyrillic-ext-regular.woff2) format("woff2"),url(fonts/open-sans-v18-cyrillic-ext-regular.woff) format("woff"),url(fonts/open-sans-v18-cyrillic-ext-regular.ttf) format("truetype"),url(fonts/open-sans-v18-cyrillic-ext-regular.svg#OpenSans) format("svg"); font-display: swap;}
@@ -18,9 +18,9 @@
 </head>
 <body class="used-parts">
 
-<!-- Здесь класс heading_style_2 и лого другое (scania-wordmark.webp) -->
+<!-- Здесь класс heading_style_2 -->
 <div class="d-flex align-items-center heading heading_style_2">
-	<a href="/"><img src="img/scania-wordmark.webp" class="logo"  width="200" alt="home logo"></a>
+	<a href="/"><img src="img/home-logo.webp" class="logo"  width="200" alt="home logo"></a>
 	<nav class="main-nav">
 		<ul class="main-nav__list d-flex">
 			<li class="main-nav__item"><a href="#header" class="main-nav__link go_to">Головна</a></li>
@@ -59,73 +59,50 @@
 <div class="page-content">
 	<div class="container">
 		<h1 class="section-title">
-			Коpзина
+			Контакти
 		</h1>
 		<nav class="breadcrumb" aria-label="Breadcrumb">
 		  <ul class="breadcrumb__list d-flex">
 		    <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Головна</a></li>
-		    <li class="breadcrumb__item current">Корзина</li>
+		    <li class="breadcrumb__item current">Конакти</li>
 		  </ul>
 		</nav>
-
-
-		<table class="cart">
-			<thead>
-				<tr class="cart__item">
-					<td>Фото</td>
-					<td>Назва</td>
-					<td>Кількість</td>
-					<td>Ціна</td>
-					<td></td>
-				</tr>
-			</thead>
-			<tr class="cart__item">
-				<td><img src="img/photo1__.png" alt="" class="cart__thumbnail"></td>
-				<td class="cart__name"><a href="#">Гидравлика на движущийся пол для тягача SCANIA</a></h3></td>
-				<td class="cart__count"><input type="number" placeholder="1" value="1"></td>
-				<td><span>1200 USD</span></td>
-				<td class="cart__close"><a href="#"><i class="fas fa-times"></i></a></td>
-			</tr>
-			<tr class="cart__item">
-				<td><img src="img/photo1__.png" alt="" class="cart__thumbnail"></td>
-				<td class="cart__name"><a href="#">Гидравлика на движущийся пол для тягача SCANIA</a></h3></td>
-				<td class="cart__count"><input type="number" placeholder="1" value="1"></td>
-				<td><span>1200 USD</span></td>
-				<td class="cart__close"><a href="#"><i class="fas fa-times"></i></a></td>
-			</tr>
-			<tr>
-				<td class="cart__totals">
-					Итого: 2400 USD
-				</td>
-			</tr>
-		</table>
-
-
-		<form action="#" method="POST" class="form form_checkout">
-			<h3 class="form__title">Оформить заказ</h3>
-			<div class="input-group">
-				<input type="text" name="fullname" placeholder="ФИО" class="input-group__input">
-			</div>
-			<div class="input-group">
-				<input type="tel" name="tel" placeholder="Телефон" class="input-group__input">
-			</div>
-			<div class="input-group">
-				<input type="email" placeholder="Почта" class="input-group__input">
-			</div>
-
-			<div class="input-group">
-				<input type="text" name="address" placeholder="Адреса" class="input-group__input">
-			</div>
-
-			<div class="input-group">
-				<textarea placeholder="Комментарий к заказу" name="comment" class="input-group__input"></textarea>
-			</div>
-
-			<div class="input-group">
-				<button type="submit" name="send" class="btn input-group__btn">Оформить заказ</button>
-			</div>
-		</form>
 		
+
+
+		<div class="stack stack_contacts stack_contacts_extend d-grid">
+			<div class="stack__item">
+				<table>
+					<tr>
+						<td>Графік роботи </td>
+						<td>Пн.-Пт. 09-00 - 18-00</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>Сб. 09-00 - 13-00</td>
+					</tr>
+					<tr>
+						<td>Адрес</td>
+						<td>м.Київ, Солом’янський район, вул. Світлогірська , 2/25 .</td>
+					</tr>
+					<tr>
+						<td>Телефон</td>
+						<td>097-776-15-32</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>067-543-68-84</td>
+					</tr>
+					<tr>
+						<td>Email:</td>
+						<td>scania@mail.ru</td>
+					</tr>
+				</table>
+			</div>
+			<div class="stack__item">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.6839685388795!2d30.404787315604967!3d50.44698697947494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc6c01187e11%3A0x61d5083767fb7b86!2z0YPQuy4g0KHQstC10YLQu9C-0LPQvtGA0YHQutCw0Y8sIDIvMjUsINCa0LjQtdCyLCDQo9C60YDQsNC40L3QsCwgMDIwMDA!5e0!3m2!1sru!2sro!4v1613346779785!5m2!1sru!2sro" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+		</div>
 	</div>
 </div>
 

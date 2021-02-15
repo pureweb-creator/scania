@@ -58,7 +58,7 @@
 			transition: all .3s ease;
 
 			&:hover{
-				transform: rotate(180deg);
+				transform: rotate(90deg);
 			}
 		}
 	}
@@ -67,4 +67,5 @@
 .form_checkout{
 	padding: 0;
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
