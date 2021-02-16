@@ -14,3 +14,19 @@
 		font-weight: 600;
 	}
 }
+.vin__image{
+	img{
+		box-shadow: $card_shadow;
+		border-radius: 10px;
+		width: 100%;
+		cursor: pointer;
+		margin-bottom: 30px;
+		transition: all .7s ease;
+		&:hover{
+			box-shadow: $card_shadow_active
+		}
+		&:first-child:hover{
+			transform: translateY(-30px);
+		}
+	}
+}

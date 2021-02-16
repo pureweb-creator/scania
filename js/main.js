@@ -929,6 +929,20 @@ $(document).ready(function () {
   });
 
 
+  val = $('.cost').text();
+  $('#test').on('click input', function () {
+    cost = $('#test').val();
+
+    if(cost > 0){
+
+     $('.cost').html(cost * val);
+    } else {
+     $('.cost').html('0');
+
+    }
+  });
+
+
 
 
 });
