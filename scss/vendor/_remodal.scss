@@ -156,8 +156,11 @@ html.remodal-is-locked {
   display: block;
   overflow: visible;
 
-  width: 35px;
-  height: 35px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
 
@@ -168,29 +171,13 @@ html.remodal-is-locked {
   color: #333;
   border: 0;
   outline: 0;
-  background: transparent;
+  background: rgba(32,35,51,.07);
+  border-radius: 100px;
 }
 
 .remodal-close:hover,
 .remodal-close:focus {
   transform: rotate(180deg);
-}
-
-.remodal-close:before {
-  font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
-  font-size: 35px;
-  line-height: 35px;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  display: block;
-
-  width: 35px;
-
-  content: "\00d7";
-  text-align: center;
 }
 
 /* Dialog buttons */
