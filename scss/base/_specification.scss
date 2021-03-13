@@ -40,33 +40,52 @@ hr{
 .section-header{
 	margin-bottom: 50px;
 }
-.section-title{
-	margin-bottom: 20px;
+
+.section-title-wrap{
+	margin-bottom: 50px;
+	display: inline-block;
+	align-items: center;
+
+	.section-title{
+		margin-bottom: 0;
+	}
+
+	.section-title__btn{
+		border-radius: 10px;
+		font-size: 14px;
+		margin-left: auto;
+		height: 50px;
+		padding: 0 20px;
+	}
 }
 section{
 	padding: 50px 0;
+}
 
-	.section-description{
-		font-size: 18px;
-		span{
-			font-weight: 600;
-		}
+.section-description{
+	font-size: 18px;
+	span{
+		font-weight: 600;
 	}
+}
 
 
-	.btn{
-		border-color: $accent_light;
-		margin-top: 20px;
+.btn{
+	border-color: $accent_light;
+	margin-top: 20px;
 
-		&:hover{
-			background: $accent_light;
-			color: #fff;
-		}
+	&:hover{
+		background: $accent_light;
+		color: #fff;
 	}
 }
 
 .btn_red{
-	background: $red !important;
+	background: $red;
+	color: #fff !important;
+	&:hover{
+		background: darken($red, 10)
+	}
 }
 
 .text-center{
@@ -92,6 +111,10 @@ section{
 
 .d-flex{
 	display: flex;
+}
+
+.flex-wrap{
+	flex-wrap: wrap
 }
 
 i.fas:before{

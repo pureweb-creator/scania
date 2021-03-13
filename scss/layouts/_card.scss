@@ -1,5 +1,4 @@
 .card{
-	// border: 1px solid rgba(0,0,0,.125);
 	background: #fff;
 	overflow: hidden;
 	border-radius: 5px;
@@ -38,15 +37,27 @@
 		padding: 6px 12px;
 		font-size: 16px;
 		border-radius: 5px;
-		background: $accent_light;
 		color: #fff;
-		&:hover{
-			background: transparent !important;
-			color: $accent_light !important;
-		}
 	}
 
 	&__key{
 		font-weight: 700;
+	}
+
+
+	.slick-prev, .slick-next{
+	    width: 45px;
+	    height: 45px;
+	    &::before{
+	    	height: 100%;
+	    }
+	}
+
+
+	.slick-next{
+		right: 10px;
+	}
+	.slick-prev{
+		left: 10px;
 	}
 }
